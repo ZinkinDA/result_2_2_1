@@ -1,6 +1,5 @@
 package hiber.model;
 
-import com.sun.istack.NotNull;
 
 import javax.persistence.*;
 
