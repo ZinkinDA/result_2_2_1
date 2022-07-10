@@ -17,7 +17,7 @@ public class MainApp {
 
       UserService userService = context.getBean(UserService.class);
 
-     User u1 = new User("user1","SurName1","Email1@mail.ru");
+     User u1 = new User("user12345","SurName1","Email1@mail.ru");
      User u2 = new User("user2","SurName2","Email2@mail.ru");
      User u3 = new User("user3","SurName3","Email3@mail.ru");
      User u4 = new User("user4","SurName4","Email4@mail.ru");
@@ -51,7 +51,7 @@ public class MainApp {
        try {
            System.out.println(userService.getUserByCar("BMW7", 1982));
        } catch (NoResultException e) {
-           System.out.println("Нет пользователя с такой машиной.");
+           System.out.println("Not Found");
        }
        System.out.println("*************************");
 

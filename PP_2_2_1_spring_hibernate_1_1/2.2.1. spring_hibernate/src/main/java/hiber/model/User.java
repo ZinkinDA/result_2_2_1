@@ -24,7 +24,8 @@ public class User {
 
    public User() {}
 
-   @OneToOne(mappedBy = "user",cascade = CascadeType.ALL)
+   @OneToOne(mappedBy = "user")
+   @PrimaryKeyJoinColumn
    private Cars cars;
    
    public User(String firstName, String lastName, String email) {

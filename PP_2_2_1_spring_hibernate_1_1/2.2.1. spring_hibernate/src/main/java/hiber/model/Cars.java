@@ -46,7 +46,7 @@ public class Cars {
         this.series = series;
     }
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @OneToOne()
     @JoinColumn(name = "id")
     private User user;
 
